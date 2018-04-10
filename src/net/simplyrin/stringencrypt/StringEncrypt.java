@@ -40,7 +40,7 @@ public class StringEncrypt {
 		for(int i = 0; i < bytes.length; i++) {
 			value += bytes[i] + ", ";
 		}
-		return value.substring(0, (value.length() - 1));
+		return value.substring(0, (value.length() - 2));
 	}
 
 }
