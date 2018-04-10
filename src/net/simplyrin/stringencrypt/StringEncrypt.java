@@ -38,9 +38,9 @@ public class StringEncrypt {
 		byte[] bytes = text.getBytes();
 		String value = "";
 		for(int i = 0; i < bytes.length; i++) {
-			value += ", " + bytes[i];
+			value += bytes[i] + ", ";
 		}
-		return value;
+		return value.substring(0, (value.length() - 1));
 	}
 
 }
